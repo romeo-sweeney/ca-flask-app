@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Email Addresses</title>
+    <link rel="stylesheet" href="static/css/result.css">
+    <script src="static/js/copy.js"></script>
+</head>
+<body>
+    <nav>
+        <a id="home-button" href="/">
+            <img id="home-icon" src="static/images/home.png" alt="Home" title="Go to Home">
+            <span id="home-text">Home</span>
+        </a>
+    </nav>
+    <main>
+        <h1>Email Addresses:</h1>
+        <div class="email-container">
+            <div class="copy-container" onclick="copyToClipboard('emailList')">
+                <img id="copy-icon" src="static/images/copy.png" alt="Copy to Clipboard" title="Copy to Clipboard">
+                <span id="copy-text">Copy</span>
+                <span id="copy-status"></span> <!-- Added a span for the copy status -->
+            </div>
+            <pre id="emailList">{{ result }}</pre>
+        </div>
+    </main>
+</body>
+</html>

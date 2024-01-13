@@ -1,0 +1,112 @@
+/* static/css/styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #202020; /* Dark Background Color */
+    color: #fff; /* Text Color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: darkcyan;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 0px;
+}
+
+.main {
+    display: flex;
+    justify-content:space-around;
+    width: 80%;
+}
+
+.instructions {
+    max-width: 45%;
+    text-align: left;
+    background-color: #2c2c2c; /* Instructions Background Color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+}
+
+h3 {
+    color: darkcyan;
+    margin-bottom: 10px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+a {
+    color: darkcyan; /* Link Color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.data_processing {
+    max-width: 45%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #61dafb; /* Label Color */
+}
+
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: #2c2c2c; /* Input Background Color */
+    color: #fff; /* Input Text Color */
+    border: 1px solid darkcyan; /* Input Border Color */
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: darkcyan; /* Button Background Color */
+    color: #fff; /* Button Text Color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #4682b4; /* Button Hover Background Color */
+}

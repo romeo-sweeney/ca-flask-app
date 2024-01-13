@@ -1,0 +1,125 @@
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Make body fill the screen height */
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+#home-button {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+}
+
+#home-button:hover,
+#home-button:active {
+    color: #61dafb; /* Change color on hover and click */
+}
+
+#home-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#home-button:hover #home-icon {
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+#home-text {
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#home-button:hover #home-text {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto; /* Adjusted margin for better spacing */
+    text-align: center;
+}
+
+h1 {
+    color: darkcyan;
+}
+
+.email-container {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.copy-container {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.copy-container:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.copy-container.copied #copy-text {
+    transform: scale(1); /* Reset size after copying */
+}
+
+#copy-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#copy-text {
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.copy-container:hover #copy-text {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.copy-container.copied #copy-text {
+    transform: scale(1); /* Reset size after copying */
+}
+
+#emailList {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    max-height: 300px;
+}
+
+#copy-status {
+    display: inline-block;
+    margin-left: 5px;
+    color: #61dafb; /* Copy status color */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.copy-container.copied #copy-status {
+    opacity: 1; /* Show when copied class is added */
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <title>CA Tools</title>
+</head>
+<body>
+    <h1>House Email List</h1>
+    <section class="main">
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Download the roster google sheet.</li>
+                    <ol>
+                        <li>Access the roster sheet: <a href="https://docs.google.com/spreadsheets/d/1tsTlbD7apM9-LhcIj4NcICv5dLDgm5KiVhzKuPh78jI/edit#gid=983651296">radius roster spring 2024</a></li>
+                        <li>File -> Download -> Comma Seperated Values (.csv)</li>
+                    </ol>
+                <li>Upload the csv roster to this website.</li>
+                <li>Select the house number to make your email list.</li>
+                <li>Click the "Process Data" button.</li>
+                <li>Copy the email list.</li>
+            </ol>
+        </div>
+        <div class="data_processing">
+            <form action="/process" method="post" enctype="multipart/form-data">
+                <label for="file_input">Upload CSV file:</label><br>
+                <input type="file" id="file_input" name="file_input" accept=".csv"><br>
+                
+                <label for="house_number">Select House Number:</label>
+                <select id="house_number" name="house_number">
+                    <option value="Radius - House 01">Radius - House 01</option>
+                    <option value="Radius - House 02">Radius - House 02</option>
+                    <option value="Radius - House 03">Radius - House 03</option>
+                    <option value="Radius - House 04">Radius - House 04</option>
+                    <option value="Radius - House 05">Radius - House 05</option>
+                    <option value="Radius - House 06">Radius - House 06</option>
+                    <option value="Radius - House 07">Radius - House 07</option>
+                    <option value="Radius - House 08">Radius - House 08</option>
+                    <option value="Radius - House 09">Radius - House 09</option>
+                    <option value="Radius - House 10">Radius - House 10</option>
+                    <option value="Radius - House 11">Radius - House 11</option>
+                    <option value="Radius - House 12">Radius - House 12</option>
+                </select><br>
+        
+                <input type="submit" value="Process Data">
+            </form>    
+        </div>
+    </section>
+</body>
+</html>
